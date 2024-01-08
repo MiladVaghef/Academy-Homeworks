@@ -20,8 +20,6 @@ body {
     radial-gradient(142% 91% at 111% 84%, #e583b9 0%, #ac23d7ff 100%);
 }
 #text-box {
-  width: 600px;
-  height: 900px;
   background-color: rgba(255, 255, 255, 0.182);
 }
 #text-box h3 {
@@ -36,15 +34,4 @@ body {
   padding: 30px;
   text-align: center;
   background-color: #e583b92b;
-}
-
-#text-box span {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
-  padding-top: 30px;
-  text-align: left;
-  background-color: #e583b92b;
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
 }
