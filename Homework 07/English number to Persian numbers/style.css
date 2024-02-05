@@ -1,0 +1,116 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(20px);
+  font-family: "Roboto", sans-serif;
+}
+
+#colorLayer {
+  background-color: rgba(0, 0, 0, 0.541);
+}
+
+#formContainer {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#formWrapper {
+  background-color: rgba(255, 255, 255, 0.194);
+  width: 40%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  border-radius: 13px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+.title h1 {
+  color: white;
+  text-align: left;
+  width: 100%;
+}
+
+#englishNumber {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 40px;
+  border-radius: 9px;
+  border: 0px solid rgb(58, 58, 58);
+  background-color: rgba(255, 255, 255, 0.189);
+  margin: 0px;
+  margin-bottom: 20px;
+  padding: 0px;
+  text-indent: 20px;
+}
+
+/* Styling for input fields when focused */
+#englishNumber:focus {
+  background-color: rgba(255, 255, 255, 0.312);
+  outline: 0px;
+  outline-offset: 0px;
+  transition: all 0.3s ease-in;
+}
+
+/* Styling for input placeholders */
+#englishNumber::placeholder {
+  text-indent: 20px;
+  color: rgba(255, 255, 255, 0.277);
+}
+
+/* Hide spin button in WebKit browsers */
+#englishNumber::-webkit-inner-spin-button {
+  display: none;
+}
+
+#buttonContainer {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#submitButton {
+  color: white;
+  width: 50%;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.264);
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#submitButton:hover {
+  background-color: rgba(255, 255, 255, 0.435);
+  transition: all 0.3s ease-in;
+}
+
+#returnPersianContainer {
+  color: white;
+  min-height: 30px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.189);
+  border-radius: 9px;
+  padding: 10px 10px 10px 20px;
+}
+#returnPersian {
+  font-weight: 100;
+  font-size: 22px;
+  word-wrap: break-word;
+  max-width: 90%;
+  margin: 0%;
+}
