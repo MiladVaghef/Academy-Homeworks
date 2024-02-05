@@ -1,0 +1,139 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-image: url(starry-cosmos-galaxy-clouds.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(8px);
+    font-family: sans-serif;
+}
+
+#formContainer {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#form {
+    width: 70%;
+    height: 100%;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.247);
+    padding: 40px;
+}
+
+#formTitle {
+    color: white;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#birthdaySection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#birthdaySection h6 {
+    color: white;
+    margin: 0%;
+}
+
+.birthdayInputTitle {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+#yearContainer {
+    padding-bottom: 10px ;
+}
+
+#yearContainer input {
+  background-color: rgba(0, 0, 0, 0.212);
+  border: 0px;
+  text-indent: 5px;
+  border-radius: 4px;
+  width: 171px;
+  height: 22px;
+  color: white;
+}
+
+#yearContainer input:focus {
+    border: 0px;
+    outline: 0px;
+}
+
+#yearContainer input:hover {
+     background-color: rgba(0, 0, 0, 0.281);
+     transition: all 0.3s ease-in;
+}
+
+#yearContainer input::-webkit-inner-spin-button {
+    display: none;
+}
+
+#monthContainer {
+    padding-bottom: 10px;
+}
+
+#monthContainer select {
+    width: 175px;
+    border: 0px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.212);
+    color: white;
+    padding: 3px;
+}
+
+
+
+#dayContainer select {
+    width: 175px;
+    border: 0px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.212);
+    color: white;
+    padding: 3px;
+}
+
+#resultContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#resultContainer h6 {
+    margin: 0%;
+    margin-top: 30px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#resultSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.212);
+    border-radius: 5px;
+    width: 180px;
+    height: 28px;
+}
+
+#resultSection p {
+    margin: 0%;
+    color: white;
+    font-size: 12px;
+}
+
+
+
+
