@@ -1,0 +1,146 @@
+/* Reset default margin and padding for the entire document */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(Backgrounds/background1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  backdrop-filter: blur(10px);
+}
+
+/* Styling for the container holding to-do pages */
+#pagesContainer {
+  padding: 90px 60px 60px 60px;
+  display: grid;
+  grid-template-columns: repeat(1, 0fr);
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Styling for individual to-do pages */
+.toDoPage {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.335);
+  height: 100%;
+  padding: 20px 40px 30px 40px;
+  border-radius: 10px;
+  width: 185px;
+  transition: all 3s ease-in;
+}
+
+.toDoContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toDo {
+  display: flex;
+  margin-top: 15px;
+}
+
+.toDoCheckInputs {
+  display: none;
+}
+
+.customCheckbox {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.109);
+  display: inline-block;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customCheckbox i {
+  opacity: 0;
+  color: white;
+}
+
+.toDoCheckInputs:checked + .customCheckbox {
+  background-color: rgba(78, 78, 78, 0.323);
+}
+.toDoCheckInputs:checked + .customCheckbox i {
+  opacity: 1;
+}
+
+.toDoTextInput {
+  color: black;
+  text-indent: 10px;
+  border: 0;
+  margin: 0%;
+  padding: 0%;
+  background-color: rgba(255, 255, 255, 0.639);
+}
+
+.toDoTextInput:focus {
+  outline: 0px;
+}
+
+/* Styling for completed (strikethrough) text input */
+.toDoTextInput.completed {
+  text-decoration: line-through;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the Description input */
+
+.descriptionInput {
+  background-color: rgba(255, 255, 255, 0.639);
+  resize: none;
+  border: 0;
+  width: 170px;
+  height: 80px;
+  border-radius: 2px;
+  padding: 9px;
+}
+
+.descriptionInput:focus {
+  outline: 0;
+}
+
+/* Styling for the button container */
+#buttonContainer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: sticky;
+  top: 85%;
+}
+
+/* Styling for the "Create Page" button */
+#createPage {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: all 0.1s ease-out;
+  cursor: pointer;
+  border-radius: 17vw;
+  width: 4vw;
+  height: 4vw;
+  border: 0;
+  color: white;
+  font-size: 1vw;
+  background-color: rgba(255, 255, 255, 0.359);
+}
+
+/* Hover effect for the "Create Page" button */
+#createPage:hover {
+  transition: all 0.1s ease-in;
+  width: 5vw;
+  height: 5vw;
+  background-color: rgba(255, 255, 255, 0.521);
+}
